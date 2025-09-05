@@ -5,7 +5,6 @@ import java.util.Scanner;
 class InicioPAM {
 
     private String reglamentoPOO;
-
     private String lineamientosClassroom;
     private String fechasParciales;
     private String porcentajesParcial;
@@ -48,6 +47,7 @@ class InicioPAM {
         System.out.println("\n Porcentajes por Parcial: " + porcentajesParcial);
     }
 }
+
 public class MenuPAM {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
