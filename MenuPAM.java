@@ -56,11 +56,10 @@ public class MenuPAM {
         
         do {
             System.out.println("\n===== MENÚ INICIO PAM =====");
-            System.out.println("1. Ingresar Reglamento POO");
-            System.out.println("2. Ingresar Lineamientos Classroom");
-            System.out.println("3. Ingresar Fechas de Parciales");
-            System.out.println("4. Ingresar Porcentajes por Parcial");
-            System.out.println("5. Mostrar toda la información");
+            System.out.println("1. Lineamientos Classroom");
+            System.out.println("2. Reglamento POO");
+            System.out.println("3. Fechas de Parciales");
+            System.out.println("4. Porcentajes por Parcial");
             System.out.println("0. Salir");
             System.out.print("Seleccione una opción: ");
             opcion = sc.nextInt();
@@ -68,30 +67,31 @@ public class MenuPAM {
 
             switch (opcion) {
                 case 1:
-                System.out.print("Ingrese Reglamento POO: ");
+                System.out.print("\n1. Entregar los trabajos para su revision\n2. Entregar en PDF\n3. Avisos de clase\n4. Entregas autorizadas con retraso, 5 Calif Max ");
                 pam.setReglamentoPOO(sc.nextLine());
                 break;
 
                 case 2:
-                System.out.print("Ingrese Lineamientos Classroom: ");
+                System.out.print("\n1. Respeto\n2. Importante participación activa en orden\n3. No entregar trabajos incompletos\n4. No se aplican examen fuera de tiempo\n5.  Plagio de trabajos = 0 para todos\n6. 3 faltas = Final del parcial\n7. Calificación Máxima en final 8 ");
                 pam.setLineamientosClassroom(sc.nextLine());
                 break;
 
                 case 3:
-                System.out.print("Ingrese Fechas de Parciales: ");
+                System.out.print("\n1. Primer Parcial: 29-09-25\n2. Segundo Parcial: 03-11-25\n3. Tercer Parcial: 01-12-25\n4. Final: 08-12-25 ");
                 pam.setFechasParciales(sc.nextLine());
                 break;
 
                 case 4:
-                System.out.print("Ingrese Porcentajes por Parcial: ");
-                pam.setPorcentajesParcial(sc.nextLine());
-                break;
+                System.out.println("\n--- PORCENTAJES POR PARCIAL ---\n");
 
-                case 5:
-                pam.mostrarReglamentoPOO();
-                pam.mostrarLineamientosClassroom();
-                pam.mostrarFechasParciales();
-                pam.mostrarPorcentajesParcial();
+                System.out.printf("%-30s %5s %5s %5s%n", " ", "1P", "2P", "3P");
+                System.out.printf("%-30s %5s %5s %5s%n", "EVIDENCIA DE CONOCIMIENTO", "40%", "40%", "20%");
+                System.out.printf("%-30s %5s %5s %5s%n", "EVIDENCIA DE DESEMPEÑO", "20%", "20%", "10%");
+                System.out.printf("%-30s %5s %5s %5s%n", "EVIDENCIA DE PRODUCTO", "30%", "20%", "40%");
+                System.out.printf("%-30s %5s %5s %5s%n", "PROYECTO INTEGRADOR", "10%", "20%", "30%");
+
+                System.out.println(); 
+
                 break;
 
                 case 0:
