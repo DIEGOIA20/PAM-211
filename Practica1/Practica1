@@ -1,18 +1,13 @@
-//Esta es la version del codigo dada por el profesor A)
+// A)
 
-var nombre = "Armando";
-var edad = 25;
+let nombre = "Armando"; // usamos let porque luego se reasigna
+const edad = 25;        // usamos const porque la edad no cambia
 
-nombre = "Ana Maria";
+nombre = "Ana Maria"; // reasignación permitida con let
 
-var saludo = "Hola," + nombre + ".Tienes" + edad + "años.";
+const saludo = "Hola," + nombre + ".Tienes" + edad + "años.";
 
-//B)
+console.log(saludo); // muestra en consola el contenido de saludo
 
-function cuadrado(numero)
-{
-    return numero * numero;
-}
-// console.log();
-//muestra en consola en probando con 3 numeros diferentes
+
 
