@@ -1,0 +1,8 @@
+//B)
+
+const cuadrado = (numero) => numero * numero;
+
+// probamos con 3 números diferentes
+console.log(cuadrado(2));  // 4
+console.log(cuadrado(5));  // 25
+console.log(cuadrado(10)); // 100
