@@ -1,0 +1,18 @@
+//Esta es la version del codigo dada por el profesor A)
+
+var nombre = "Armando";
+var edad = 25;
+
+nombre = "Ana Maria";
+
+var saludo = "Hola," + nombre + ".Tienes" + edad + "años.";
+
+//B)
+
+function cuadrado(numero)
+{
+    return numero * numero;
+}
+// console.log();
+//muestra en consola en probando con 3 numeros diferentes
+
