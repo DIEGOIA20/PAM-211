@@ -50,11 +50,8 @@ const styles = StyleSheet.create({
     textDecorationLine: 'underline' //Decoración de la letra (underline, line-through, none)
   },
   botonesContainer:{
-    marginTop: 20,
+    marginTop: 20, 
     flexDirection: 'row', //Fila o Columna (row, column)
     gap: 20 //Espacio entre los elementos (solo en React Native 0.71 o superior)
   }
-
-
-
 });
