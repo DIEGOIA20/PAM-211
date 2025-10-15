@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import { Text, StyleSheet, View,Button } from 'react-native'
 import BotonesScreen from './BotonesScreen'
 import ContadorScreen from './ContadorScreen'
+import TextScreen from './TextScreen'
+
 
 export default function MenuScreen() {
     const [Screen, setScreen] = useState('menu');
@@ -12,7 +14,10 @@ export default function MenuScreen() {
      
     case 'botones':
         return <BotonesScreen />;
-        
+
+        case 'text':
+        return <TextScreen />;
+            
     case 'menu': 
     default:
          return (
@@ -41,6 +46,9 @@ export default function MenuScreen() {
              </View>
              <View style={styles.buttonWrapper}>
                <Button onPress={() => setScreen('botones')} title='Práctica Botones'/>
+             </View>
+              <View style={styles.buttonWrapper}>
+               <Button onPress={() => setScreen('text')} title='Práctica Text'/>
              </View>
            </View>
          )  
