@@ -20,7 +20,6 @@ export default function BotonesScreen(){
         <TouchableOpacity
           style={styles.botonApagar}
           onPress={() => setPrendido(false)}>
-
           <Text style={styles.textoBoton}>Apagar</Text>
         </TouchableOpacity>
 
