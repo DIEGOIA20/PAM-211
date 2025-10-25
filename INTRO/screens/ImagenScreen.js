@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react' 
 import { Text, StyleSheet, View, ImageBackground, Dimensions } from 'react-native'
 
-const BackgroundImage = require('../assets/Fondo.jpg');;
+const BackgroundImage = require('../assets/Fondo.jpg');
 const BackgroundImagen = require('../assets/icon.png');
 
 export default function ImagenBackgroundSplashScreen({navigation}) {
