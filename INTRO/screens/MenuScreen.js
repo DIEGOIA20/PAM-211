@@ -6,6 +6,8 @@ import TextScreen from './TextScreen'
 import ImagenScreen from './ImagenScreen'
 import RepasoScreen from './RepasoScreen'
 import ScrollViewScreen from './ScrollViewScreen'
+import ActivityScreen from './ActivityScreen'
+import ListScreen from './ListScreen'
 
 
 
@@ -32,6 +34,12 @@ export default function MenuScreen() {
          case 'scrollView':
         return <ScrollViewScreen />;
 
+            case 'Activity':
+        return <ActivityScreen />;
+
+        case 'list':
+        return <ListScreen />;
+
          case 'menu': 
     default:
          return (
@@ -54,6 +62,12 @@ export default function MenuScreen() {
              </View>
               <View style={styles.buttonWrapper}>
                <Button onPress={() => setScreen('scrollView')} title='Practica ScrollView'/>
+             </View>
+              <View style={styles.buttonWrapper}>
+               <Button onPress={() => setScreen('Activity')} title='Practica Activity'/>
+             </View>
+             <View style={styles.buttonWrapper}>
+               <Button onPress={() => setScreen('list')} title='Practica List'/>
              </View>
            </View>
          )  
