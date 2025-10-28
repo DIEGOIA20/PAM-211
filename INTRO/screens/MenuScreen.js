@@ -5,6 +5,8 @@ import ContadorScreen from './ContadorScreen'
 import TextScreen from './TextScreen'
 import ImagenScreen from './ImagenScreen'
 import RepasoScreen from './RepasoScreen'
+import ScrollViewScreen from './ScrollViewScreen'
+
 
 
 
@@ -27,6 +29,9 @@ export default function MenuScreen() {
          case 'repaso':
         return <RepasoScreen />;
 
+         case 'scrollView':
+        return <ScrollViewScreen />;
+
          case 'menu': 
     default:
          return (
@@ -46,6 +51,9 @@ export default function MenuScreen() {
              </View>
                <View style={styles.buttonWrapper}>
                <Button onPress={() => setScreen('repaso')} title='Practica Repaso'/>
+             </View>
+              <View style={styles.buttonWrapper}>
+               <Button onPress={() => setScreen('scrollView')} title='Practica ScrollView'/>
              </View>
            </View>
          )  
