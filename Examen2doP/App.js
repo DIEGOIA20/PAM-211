@@ -6,7 +6,7 @@ export default function App() {
   const ordenar = (nombre, precio) => {
     Alert.alert(
       "Confirmar orden",
-      `Platillo: ${nombre}\n Precio: $${precio}`,
+      `Platillo: ${nombre}\nPrecio: $${precio}`,
       [
         { text: "Cancelar", style: "cancel" },
         { text: "Confirmar", onPress: () => console.log("Orden confirmada") }
@@ -18,11 +18,13 @@ export default function App() {
     <View style={styles.container}>
 
       {/* Encabezado */}
-      <Text style={styles.header}>Restaurante</Text>
+      <Text style={styles.header}>🍽 Restaurante El Buen Sabor</Text>
       <Text style={styles.subheader}>Comida deliciosa al mejor precio</Text>
 
+      {/* Contenido Scroll */}
       <ScrollView style={styles.scroll}>
 
+        {/* Categoría Entradas */}
         <Text style={styles.category}>Entradas</Text>
 
         <View style={styles.item}>
@@ -42,6 +44,8 @@ export default function App() {
             <Text style={styles.buttonText}>Ordenar</Text>
           </TouchableOpacity>
         </View>
+
+        {/* Categoría Postres */}
         <Text style={styles.category}>Postres</Text>
 
         <View style={styles.item}>
