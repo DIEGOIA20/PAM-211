@@ -8,6 +8,9 @@ import RepasoScreen from './RepasoScreen'
 import ScrollViewScreen from './ScrollViewScreen'
 import ActivityScreen from './ActivityScreen'
 import ListScreen from './ListScreen'
+import ModalScreen from './ModalScreen'
+import PresupuestosScreen from './PresupuestosScreen'
+import NotificacionesScreen from './NotificacionesScreen'
 
 
 
@@ -34,11 +37,20 @@ export default function MenuScreen() {
          case 'scrollView':
         return <ScrollViewScreen />;
 
-            case 'Activity':
+        case 'Activity':
         return <ActivityScreen />;
 
         case 'list':
         return <ListScreen />;
+
+        case 'modal':
+        return <ModalScreen />;
+
+        case 'presupuestos':
+        return <PresupuestosScreen  />;
+
+        case 'notificaciones':
+        return <NotificacionesScreen  />;
 
          case 'menu': 
     default:
@@ -68,6 +80,15 @@ export default function MenuScreen() {
              </View>
              <View style={styles.buttonWrapper}>
                <Button onPress={() => setScreen('list')} title='Practica List'/>
+             </View>
+             <View style={styles.buttonWrapper}>
+               <Button onPress={() => setScreen('modal')} title='Practica Modal'/>
+             </View>
+             <View style={styles.buttonWrapper}>
+               <Button onPress={() => setScreen('presupuestos')} title='Practica Presupuestos'/>
+             </View>
+             <View style={styles.buttonWrapper}>
+               <Button onPress={() => setScreen('notificaciones')} title='Practica Notificaciones'/>
              </View>
            </View>
          )  
